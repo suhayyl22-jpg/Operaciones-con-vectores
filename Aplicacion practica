@@ -1,0 +1,22 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+A=np.array([3,2])
+B=np.array([2,4])
+
+R=A+B
+
+plt.quiver(0,0,A[0],A[1],
+angles='xy',scale_units='xy',scale=1)
+
+plt.quiver(0,0,B[0],B[1],
+angles='xy',scale_units='xy',scale=1)
+
+plt.quiver(0,0,R[0],R[1],
+angles='xy',scale_units='xy',scale=1)
+
+plt.xlim(0,6)
+plt.ylim(0,7)
+
+plt.grid()
+plt.show()
